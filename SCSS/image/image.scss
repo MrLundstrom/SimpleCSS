@@ -1,0 +1,42 @@
+.image {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 1;
+
+    img {
+        max-width: 100%;
+    }
+
+    &.round {
+        img {
+            border-radius: 100%;
+        }
+    }
+
+    &.rounded {
+        img {
+            border-radius: var(--border-radius);
+        }
+    }
+
+    @for $i from 1 through 8 {
+        @for $j from 8 through 1 {
+
+            &.is-#{$i}x#{$j} {
+                display: flex;
+                flex: 1;
+                padding-top: calc(#{$i}/#{$j} * 100%);
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}

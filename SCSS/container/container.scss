@@ -1,0 +1,11 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    flex-shrink:0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &.is-fluid { 
+        max-width: 100%;
+    }
+}

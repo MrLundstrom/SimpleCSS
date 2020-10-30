@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    flex: 1;
+    padding: var(--padding);
+    flex-direction: column;
+
+    .menu-title {
+        font-size: 1.2rem;
+        padding: calc(var(--padding)/2)
+    }
+
+    a.menu-item {
+        padding: var(--padding);
+        border-left: 1px solid var(--red-l);
+        border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+
+        &.is-active,
+        &:hover {
+            background-color: var(--transparent-l)
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+@for $i from 1 through 6 {
+    .padding-#{$i} {
+        padding: calc(var(--padding) * #{$i});
+    }
+    .margin-#{$i} {
+        margin: calc(var(--margin) * #{$i});
+    }
+}

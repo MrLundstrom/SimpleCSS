@@ -1,0 +1,57 @@
+:root {
+    //COLORS
+    --white: #fafafa;
+    --black: #050505;
+
+    --dark: #4F4F4F;
+    --dark-d: #222222;
+    --dark-l: #828282;
+
+    --light: #f3f3f3;
+    --light-d: #ebebeb;
+    --light-l: #f8f8f8;
+
+    --red: #EB5757;
+    --red-d: #bb0808;
+    --red-l: #f75959;
+
+    --orange: #F2994A;
+    --orange-d: #d36e16;
+    --orange-l: #faa85f;
+
+    --green: #27AE60;
+    --green-d: #219653;
+    --green-l: #6FCF97;
+
+    --blue: #2677d4;
+    --blue-d: #115cbe;
+    --blue-l: #42a9e6;
+
+    --purple: #9B51E0;
+    --purple-d: #620bb3;
+    --purple-l: #BB6BD9;
+
+    --transparent: rgba(0, 0, 0, 0);
+    --transparent-d: rgba(20, 20, 20, 0.25);
+    --transparent-l: rgba(200, 200, 200, 0.25);
+
+    //SIZING
+    --base-size: 1rem;
+    --padding: calc(var(--base-size)/2);
+    --margin: calc(var(--base-size)/2);
+    --border-radius: calc(var(--base-size)/4);
+
+    //FONTS
+    --sans-serif: Arial, Helvetica, sans-serif;
+    --serif: "Palatino Linotype", "Book Antiqua", 'Palatino', serif;
+
+    //Shadows
+    --shadow-i: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --shadow-o: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+
+
+
+
+}

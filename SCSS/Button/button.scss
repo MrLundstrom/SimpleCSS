@@ -1,0 +1,54 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+
+    &.is-fluid {
+        button {
+            flex: 1;
+        }
+    }
+}
+
+button, .button {
+    margin: var(--margin);
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--shadow-o);
+
+    &:hover {
+        cursor: pointer;
+
+        &.bg-green {
+            background-color: var(--green);
+        }
+
+        &.bg-orange {
+            background-color: var(--orange);
+        }
+
+        &.bg-red {
+            background-color: var(--red);
+        }
+
+        &.bg-blue {
+            background-color: var(--blue);
+        }
+
+        &.bg-purple {
+            background-color: var(--purple);
+        }
+
+        &.bg-light {
+            background-color: var(--light);
+        }
+
+        &.bg-dark {
+            background-color: var(--dark);
+        }
+    }
+}

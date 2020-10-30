@@ -1,0 +1,97 @@
+body.dark {
+    background-color: var(--light-l);
+    color: var(--dark-d);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--dark-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.bg-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-green {
+    background-color: var(--green);
+    color: var(--dark-d);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--green-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-red {
+    background-color: var(--red);
+    color: var(--dark);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--red-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-orange {
+    background-color: var(--orange);
+    color: var(--light);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--orange-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-purple {
+    background-color: var(--purple);
+    color: var(--light-l);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--purple-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light-l);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--dark-d);
+        color: var(--light-l);
+    }
+}
+
+.bg-light {
+    background-color: var(--light-l);
+    color: var(--dark-d);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--light-d);
+        color: var(--dark-d);
+    }
+}
+
+.bg-blue {
+    background-color: var(--blue);
+    color: var(--dark-d);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--blue-d);
+        color: var(--light);
+    }
+}

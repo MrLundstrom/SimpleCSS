@@ -1,0 +1,51 @@
+.columns {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+
+    &.is-column {
+        flex-direction: column;
+    }
+    &.equal-height{
+        align-items: stretch;
+    }
+
+    .column {
+        display: flex;
+        flex: 1;
+
+        @for $i from 1 through 12 {
+            &.is-#{$i} {
+                display: flex;
+                flex: none;
+                width: 100% / 12 * $i;
+            }
+
+            &.is-m-#{$i} {
+                @media only screen and (max-width: 767px) {
+                    display: flex;
+                    flex: none;
+                    width: 100% / 12 * $i;
+                }
+            }
+
+            &.is-t-#{$i} {
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    display: flex;
+                    flex: none;
+                    width: 100% / 12 * $i;
+                }
+            }
+
+            &.is-d-#{$i} {
+                @media only screen and (min-width: 1025px) {
+                    display: flex;
+                    flex: none;
+                    width: 100% / 12 * $i;
+                }
+            }
+        }
+    }
+}
